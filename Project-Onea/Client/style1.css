@@ -1,0 +1,86 @@
+html{
+    height: 100%;
+}
+body{
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-left: 30%;
+    padding-top: 10%;
+    padding-right: 30%;
+}
+
+h1{
+    font-size: 2.5em;
+    color: white;
+}
+h3{
+    margin-top: 2em;
+    color: white;
+    font-size: 1.3em;
+}
+section{
+    padding-left: 1.9em;
+    height: 100%;
+    padding-bottom: 1em;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+    
+}
+.form-input{
+    height: 2.4em;
+    width: 22em;
+    font-size: 1em;
+    border-radius: 7px;
+    backdrop-filter: blur( 4px );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-right: .5em;
+}
+.add-btn{
+    height: 3em;
+    width: 7em;
+    margin-right: .1em;
+    font-size: 1em;
+    background-color: #008793;
+    backdrop-filter: blur( 4px );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: #ffffff;
+   
+  
+}
+.add-btn:active{
+    background-color: white;
+    color: #008793;
+    backdrop-filter: blur( 4px );
+   transition: ease-in-out .3s;
+}
+
+.del-btn{
+    color: #ffffff;
+    height: 3em;
+    width: 7em;
+    font-size: 1em;
+    background-color: #008793;
+    backdrop-filter: blur( 4px );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.del-btn:active{
+    background-color: white;
+    color: #008793;
+    backdrop-filter: blur( 4px );
+   transition: ease-in-out .3s;
+}
+.result {
+    color: white;
+    font-size: 1.3em;
+}
