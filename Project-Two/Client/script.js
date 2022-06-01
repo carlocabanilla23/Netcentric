@@ -72,6 +72,11 @@ function edit(sbtn,ebtn,txtbar){
 async function GetList() {
   const listData = await http.get("/api");
   theList = listData;
+   if(theList.length === 0){
+    result.style.display = "none";
+  }else{
+    result.style.display = "inline-block"
+  }
   ShowList();
   return; 
 }
@@ -126,7 +131,7 @@ function showLoading() {
 
 async function main() {
   addButton.disabled = true;
-  
+ 
   showLoading();
 
   await GetList();
