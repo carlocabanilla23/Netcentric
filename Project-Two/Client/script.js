@@ -20,8 +20,6 @@ const delButton =  document.querySelector(".del-btn");
 
 // Listeners
 addButton.addEventListener("click", httpPost);
-// delButton.addEventListener("click", httpDelete);
-
 
 
 /* Helper Functions */
@@ -35,6 +33,7 @@ function ShowList() {
                   <th></th>
                   <th></th>
                 </tr> `;
+
   for (const itm of theList) {
     console.log(itm.completed);
     let x = "";
@@ -69,19 +68,6 @@ function edit(sbtn,ebtn,txtbar){
   txt.disabled = false;
   txt.style.backgroundColor = "#ffffff";
 }
-async function htppPatch(sbtn,ebtn,txtbar,id){
-  var sBtn = document.getElementById(sbtn);
-  var eBtn = document.getElementById(ebtn);
-  var txt = document.getElementById(txtbar);
-  sBtn.style.display = "none";
-  eBtn.style.display = "inline-block";
-  txt.disabled = true;
-  txt.style.removeProperty("background-color");
-
-  newObj.name = txt.value;
-  tempList.push(newObj)
-  await http.patch("/api/"+id,newObj);
-}
 
 async function GetList() {
   const listData = await http.get("/api");
@@ -107,18 +93,29 @@ async function httpPost(e) {
 }
 
 async function httpDelete(e) {
-  //  alert("/api/"+e);
-
+  
   await http.delete("/api/"+e);
   ShowList();
-  // e.preventDefault();
 }
 
 async function httpUpdate(e){
-  // tempList.push(newObj);
+ 
   await http.put("/api/"+e,newObj);
   
-  // e.preventDefault();
+ 
+}
+async function htppPatch(sbtn,ebtn,txtbar,id){
+  var sBtn = document.getElementById(sbtn);
+  var eBtn = document.getElementById(ebtn);
+  var txt = document.getElementById(txtbar);
+  sBtn.style.display = "none";
+  eBtn.style.display = "inline-block";
+  txt.disabled = true;
+  txt.style.removeProperty("background-color");
+
+  newObj.name = txt.value;
+  tempList.push(newObj)
+  await http.patch("/api/"+id,newObj);
 }
 
 
@@ -129,16 +126,13 @@ function showLoading() {
 
 async function main() {
   addButton.disabled = true;
-  // delButton.disabled = true;
+  
   showLoading();
 
   await GetList();
 
   addButton.disabled = false;
-  // delButton.disabled = false;
-
   
-
 }
 
 main();

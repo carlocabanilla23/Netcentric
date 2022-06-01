@@ -4,7 +4,6 @@ class coreHTTP {
   async get(url) {
     const res = await fetch(url);
     if (res.status >= 200 && res.status <= 299) {
-      //onsole.log(res.json());
       return res.json();
     } else {
       throw Error(res.status);
@@ -20,13 +19,11 @@ class coreHTTP {
       body: JSON.stringify(data)
     });
   
-    // console.console.log(JSON.stringify(data));
+  
     if (res.status >= 400) {
       throw Error(res.status)
     }
-    // if (response header content is json) {
-    //   return res.json()
-    // }
+
   }
 
  

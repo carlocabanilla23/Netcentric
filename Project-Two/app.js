@@ -37,7 +37,6 @@ app.post("/api", async (req,res) => {
   })
 
   app.delete("/api/:id",async (req,res)=>{
-    //   console.log("asdasd");
     const showId = (req.params.id);
     console.log(showId);
     await Task.deleteOne({_id: showId});
@@ -45,7 +44,6 @@ app.post("/api", async (req,res) => {
   })
 
   app.put("/api/:id",async (req,res)=>{
-    //   console.log("asdasd");
     const showId = (req.params.id);
     console.log(showId);
 
@@ -62,7 +60,6 @@ app.post("/api", async (req,res) => {
 
   
   app.patch("/api/:id",async (req,res)=>{
-    //   console.log("asdasd");
     const showId = req.params.id;
     const temp = req.body.name;
     console.log(temp);

@@ -31,7 +31,7 @@ h3{
   font-weight: bold;
 }
 #listitem{
-width: 60%;
+width: 65%;
 padding: 2%;
 margin-right: 4%;
 font-size: 1.2em;
@@ -44,13 +44,15 @@ input:focus {
 
 .add-btn{
 padding: 2%;
-width: 31%;
+width: 26%;
 font-size: 1.2em;
 border: none;
 font-weight: bold;
 background-color: #6dca70;
 }
-
+.add-btn:hover{
+  background-color: limegreen;
+  }
 table{
   margin-top: 2em;
   border-spacing: 0;
@@ -109,7 +111,6 @@ th{
   font: inherit;
   width: 1.3em;
   height: 1.3em;
-  /* border: 0.15em solid currentColor; */
   border-radius: 0.15em;
   transform: translateY(-0.075em);
 }
