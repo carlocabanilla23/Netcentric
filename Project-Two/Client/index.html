@@ -2,26 +2,34 @@
 <html lang="en">
 <html>
     <head>
-        <meta charset="utf-8">
+        <!-- <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css"> -->
+
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>The List</title>
     </head>
     <body>
         <section>
-            <h1>My List</h1>
+            <h1>Task Manager</h1>
             <form action="">
                
                 <di class="form-row">
                     <input type="text" name="listitem" id="listitem" class="form-input" autocomplete="false" />
                     <small class="form-alert"></small>
                 </div>
-                <button type="submit" class="add-btn">Add</button>
-                <button type="submit" class="del-btn">Delete</button>
+                <button style="border-radius:25px;" type="submit" class="add-btn"><i class="fa fa-plus" ></i></button>
+                <!-- <button type="submit" class="del-btn">Delete</button> -->
             </form>
-            <h3>On my list</h3>
             <div class="result"></div>
         </section>
        
