@@ -9,6 +9,9 @@ npm -i express
 
 ## Project One
 
-npm -i express \
-npm -i mongoose \ 
-npm -i body-parser \
+npm -i express
+\
+npm -i mongoose 
+\ 
+npm -i body-parser 
+\
