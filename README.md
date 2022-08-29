@@ -7,7 +7,7 @@ Please use the following command to install the required package(s)
 npm -i express
 
 
-## Project One
+## Project Two
 
 npm -i express <br/>
 
